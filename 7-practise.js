@@ -1,4 +1,5 @@
 // 1 - Free cola
+// -----------------
 let price = 300;
 if (price > 500) {
   console.log("free coke");
@@ -7,6 +8,7 @@ if (price > 500) {
 }
 
 // 2 - BMI calculator
+// -----------------
 let weight = 60; //in kg
 let height = 1.75; // in meter
 let BMI = weight / (height * height);
@@ -20,6 +22,7 @@ if (BMI < 18.5) {
 }
 
 // 4 - Nested Friends
+// -----------------
 let myScore = 89;
 let friendScore = 90;
 
@@ -35,4 +38,37 @@ if (myScore > 80) {
   }
 } else {
   console.log("Act sad mate");
+}
+
+// 5 - Ternary Numbers
+// -----------------
+let num1, num2, result;
+num1 = 34;
+num2 = 23;
+
+// simple if else
+if (num1 > num2) {
+  result = num1 * num1;
+} else {
+  result = num1 + num2;
+}
+console.log(result);
+
+// ternary if else
+num1 > num2 ? (result = num1 * num1) : (result = num1 + num2);
+console.log(result);
+
+// 6 - Bus Fare
+// -----------------
+let age = 32;
+let student = true;
+let oldGuy = 60;
+if (age < 10) {
+  console.log("free");
+} else if (student) {
+  console.log("50% discount");
+} else if (age >= oldGuy) {
+  console.log("15% discount");
+} else {
+  console.log("Pay your bill man!");
 }
